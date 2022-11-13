@@ -46,20 +46,20 @@ The remaining bacteria found in the GI of IBD individuals is imbalanced in contr
 
 With more data a supervised learning algorithm could be used to classify the target, IBD.
  
-1. Random Forest would work well with this dataset. 
-	a. Enhance data by bootstrapping so that we are not using the same data for every tree (less 		sensitive to training data like DT).
-	b. Less features will be used to train each tree
-		i. Some trees will have less-important  features leading to bad prediction but other trees will give bad predictions in the opposite direction (hence it balances out).
-	c. Majority voting or Aggregation - combining results from multiple models.
-2. Metrics -confusion matrix and a classification report can provide:
-	a. Accuracy 
-	b. Recall - tells us how many true positives were retrieved. 
-	c. Precision -number of correctly-identified members of a class divided by all the times the model predicted that class.
+1. Random Forest would work well with this dataset. <br>
+	a. Enhance data by bootstrapping so that we are not using the same data for every tree (less sensitive to training data like DT).<br>
+	b. Less features will be used to train each tree.<br>
+		i. Some trees will have less-important  features leading to bad prediction but other trees will give bad predictions in the opposite direction (hence it balances out).<br>
+	c. Majority voting or Aggregation - combining results from multiple models.<br>
+2. Metrics -confusion matrix and a classification report can provide: <br>
+	a. Accuracy <br>
+	b. Recall - tells us how many true positives were retrieved. <br>
+	c. Precision -number of correctly-identified members of a class divided by all the times the model predicted that class.<br>
 
-3. validate model performance
-	a. K-fold cross validation
-		i. splitting the training dataset into k folds.
-	b. holdout kth fold is used as the test set.
+3. validate model performance <br>
+	a. K-fold cross validation<br>
+		i. splitting the training dataset into k folds.<br>
+	b. holdout kth fold is used as the test set.<br>
 
 
  
